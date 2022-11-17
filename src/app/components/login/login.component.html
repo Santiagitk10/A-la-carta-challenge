@@ -1,0 +1,18 @@
+<!-- loginForm sería el nombre de la variable en el componente -->
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <label>
+        email:
+        <!-- El formControlName es lo que conecta con el nombre de la variable en el componente -->
+        <input type="text" formControlName="email" >
+    </label>
+    <label>
+        password:
+        <input type="password" formControlName="password">
+    </label>
+    <button type="submit">Submit</button>
+    <p *ngIf="!loginFormIsValid">All fields must be populated</p>
+</form>
+
+
+<!-- tutorial
+https://www.youtube.com/watch?v=nofXAkAz05Q -->

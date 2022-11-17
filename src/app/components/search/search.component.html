@@ -1,0 +1,16 @@
+<form>
+    <label>
+        Search Recipe:
+        <input type="text" name="recipe" (keyup)="onSearch($event)">
+    </label>
+
+    <label>
+        Vegan:
+        <input type="radio" name="vegan" value="Vegan" [(ngModel)]="vegan">
+    </label>
+    <label>
+        Not Vegan:
+        <input type="radio" name="vegan" value=NotVegan [(ngModel)]="vegan">
+    </label>
+
+</form>
